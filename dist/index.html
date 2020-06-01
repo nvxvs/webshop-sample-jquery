@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <title>Webshop Interview Task</title>
+  </head>
+  <body>
+    <main id="root">
+      <svg id="stars" version="1.1" style="display:none">
+        <symbol id="stars-full-star" viewBox="0 0 18 18">
+          <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218"></path>
+        </symbol>
+      </svg>
+      <div class="page-wrapper">
+        <div class="filter-container">
+          <div class="filter">
+            <select id="sortBy" name="filter-sort">
+              <option value="price" selected="selected">Sort by price</option>
+              <option value="discount">Sort by discount</option>
+              <option value="rating">Sort by rating</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-container"></div>
+        <button class="btn btn-primary" id="loadproducts">Load more</button>
+      </div>
+    </main>
+    <script src="js/murrayfy.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
