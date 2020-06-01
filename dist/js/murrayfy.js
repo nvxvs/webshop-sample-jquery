@@ -2,9 +2,9 @@
  * all keys have the same type of its value.
 */
 (function ( $ ) {
-    $.fn.processData = function( options ) {
+    $.fn.Murrayfy = function( options ) {
         let settings = $.extend({
-            
+            //add default options here
         }, options );
 
         let dataset = []; //list of the products
@@ -130,6 +130,8 @@
         function sortByPrice(productA, productB){
             return calcSalePrice(productA.listPrice, productA.discount) > calcSalePrice(productB.listPrice, productB.discount) 
         }
+
+        // This is the amount of the discounted price, not phe percentage itself
         function sortByDiscountAmount(productA, productB){
             return calcSalePrice(productA.listPrice, productA.discount) - productA.listPrice > calcSalePrice(productB.listPrice, productB.discount)  - productB.listPrice
         }
@@ -189,181 +191,3 @@
     };
  
 }( jQuery ));
-
-var RESPONSE = {
-    currency: "€",
-    products: [
-        {
-            id: "product-1",
-            name: "Billed Murray fsdkfmslfmk slkdf klsmd fksdmf kls wlkfm lkfm skslkfm sklfm skmf welf msklfm sf lwfm sfm lskmf wefmsldfmk slkdfm ,,,,, dfsfsf ,s, s.f s.df, sd,f s.,f..... sdf sdf. ,s.df, ",
-            rating: "4",
-            listPrice: "200",
-            discount: "15",
-            image: "http://www.fillmurray.com/g/500/200"
-        },
-
-        {
-            id: "product-2",
-            name: "Bill's hovercraft is full of eels",
-            rating: "1",
-            listPrice: "250",
-            discount: "10",
-            image: "http://www.fillmurray.com/g/300/250"
-        },
-        {
-            id: "product-3",
-            name: "Bill fills everything",
-            rating: "5",
-            listPrice: "2500",
-            image: "http://www.fillmurray.com/g/300/400"
-        },
-        {
-            id: "product-4",
-            name: "Bill needs you to buy this product so much",
-            rating: "5",
-            listPrice: "3580",
-            discount: "20",
-            image: "http://www.fillmurray.com/g/300/300"
-        },
-        {
-            id: "product-5",
-            name: "Bill no more",
-            rating: "4",
-            listPrice: "2324",
-            discount: "11",
-            image: "http://www.fillmurray.com/g/350/500"
-        },
-        {
-            id: "product-6",
-            name: "Bill no more",
-            rating: "2",
-            listPrice: "5432",
-            image: "http://www.fillmurray.com/g/350/200"
-        },
-        {
-            id: "product-7",
-            name: "Bill no more",
-            rating: "0",
-            discount: "99",
-            listPrice: "9000",
-            image: "http://www.fillmurray.com/g/350/200"
-        },
-        {
-            id: "product-8",
-            name: "Bill no more price",
-            rating: "0",
-            discount: "3",
-            listPrice: "310",
-            image: "http://www.fillmurray.com/g/350/200"
-        },
-        {
-            id: "product-9",
-            name: "Bill price",
-            rating: "0",
-            discount: "3",
-            listPrice: "310",
-            image: "http://www.fillmurray.com/g/350/200"
-        }
-    ]
-};
-var RESPONSE2 = {
-    currency: "€",
-    products: [
-        {
-            id: "product-1",
-            name: "Plüss Alza földönkívüli II",
-            rating: "4",
-            listPrice: "200",
-            discount: "15",
-            image: "https://cdn.alza.hu/ImgW.ashx?fd=f3&cd=MA0100"
-        },
-
-        {
-            id: "product-2",
-            name: "Bill's hovercraft is full of eels",
-            rating: "1",
-            listPrice: "250",
-            discount: "10",
-            image: "http://www.fillmurray.com/g/300/250"
-        },
-        {
-            id: "product-3",
-            name: "Bill fills everything",
-            rating: "5",
-            listPrice: "2500",
-            image: "http://www.fillmurray.com/g/300/400"
-        },
-        {
-            id: "product-4",
-            name: "Bill needs you to buy this product so much",
-            rating: "5",
-            listPrice: "3580",
-            discount: "20",
-            image: "http://www.fillmurray.com/g/300/300"
-        },
-        {
-            id: "product-5",
-            name: "Bill no more",
-            rating: "4",
-            listPrice: "2324",
-            discount: "11",
-            image: "http://www.fillmurray.com/g/350/500"
-        },
-        {
-            id: "product-6",
-            name: "Bill no more",
-            rating: "2",
-            listPrice: "5432",
-            image: "http://www.fillmurray.com/g/350/200"
-        },
-        {
-            id: "product-1",
-            name: "Billed Murray",
-            rating: "4",
-            listPrice: "200",
-            discount: "15",
-            image: "http://www.fillmurray.com/g/500/200"
-        },
-
-        {
-            id: "product-2",
-            name: "Bill's hovercraft is full of eels",
-            rating: "1",
-            listPrice: "250",
-            discount: "10",
-            image: "http://www.fillmurray.com/g/300/250"
-        },
-        {
-            id: "product-3",
-            name: "Bill fills everything",
-            rating: "5",
-            listPrice: "2500",
-            image: "http://www.fillmurray.com/g/300/400"
-        },
-        {
-            id: "product-4",
-            name: "Bill needs you to buy this product so much",
-            rating: "5",
-            listPrice: "3580",
-            discount: "20",
-            image: "http://www.fillmurray.com/g/300/300"
-        },
-        {
-            id: "product-5",
-            name: "Bill no more",
-            rating: "4",
-            listPrice: "2324",
-            discount: "11",
-            image: "http://www.fillmurray.com/g/350/500"
-        },
-        {
-            id: "product-6",
-            name: "Bill no more",
-            rating: "2",
-            listPrice: "5432",
-            image: "http://www.fillmurray.com/g/350/200"
-        }
-    ]
-};
-
-

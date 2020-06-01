@@ -1,4 +1,4 @@
-var RESPONSE_ = {
+var RESPONSE = {
     currency: "€",
     products: [
         {
@@ -52,7 +52,7 @@ var RESPONSE_ = {
 };
 
 $( document ).ready(function() {
-    const main = $('.product-container').processData({}) //no options but i left here
+    const main = $('.product-container').Murrayfy({}) //no options but i left here
     const $dd_sort = $('#sortBy')
     $dd_sort.on('change', (ev)=>{
         main.sort(ev.target.value)
